@@ -1,11 +1,13 @@
 name: webrailnavoverlay
 description: A Flutter package for a web-based navigation rail with overlay support.
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/princetomar27/flutterwebrailnavoverlay
-publish_to: 'https://pub.dev'
 
 environment:
-  sdk: '>=2.12.0'  # Allows Dart SDK versions from 2.12.0 and up
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.20.0"
+
+fileName: src/webrailnavoverlay.dart
 
 dependencies:
   flutter:
@@ -20,3 +22,4 @@ flutter:
     platforms:
       web:
         pluginClass: WebRailNavOverlayPlugin
+        fileName: webrailnavoverlay.dart 

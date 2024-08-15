@@ -24,7 +24,7 @@ Add `webrailnavoverlay` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  webrailnavoverlay: ^0.0.1
+  webrailnavoverlay: ^0.0.3
 ```
 
 Then, run `flutter pub get` to install the package.
@@ -71,19 +71,20 @@ class MyApp extends StatelessWidget {
             iconPath: Icons.settings,
             index: 1,
             hoverItems: [
+                // Add multiple items here
               HoverItemConfig(
                 itemName: 'Sub-Settings 1',
                 onTap: () {
                   // Handle sub-settings 1 tap
                 },
-                itemRoute: const SettingsSubPage1(),
+                itemRoute: const SettingsSubPage1(),// Use your sub screen
               ),
               HoverItemConfig(
                 itemName: 'Sub-Settings 2',
                 onTap: () {
                   // Handle sub-settings 2 tap
                 },
-                itemRoute: const SettingsSubPage2(),
+                itemRoute: const SettingsSubPage2(), // Use your sub screen
               ),
             ],
           ),

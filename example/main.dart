@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DashboardPage(
+        appBar: null,
         pages: [
           const HomePage(),
           const SettingsPage(),

@@ -6,11 +6,13 @@ import '../rail_nav_bar/rail_nav_bar_menu_widget.dart';
 class DashboardPage extends StatefulWidget {
   final List<Widget> pages;
   final List<RailNavbarMenuItem> railNavbarMenuItemsList;
+  final AppBar? appBar;
 
   const DashboardPage({
     Key? key,
     required this.pages,
     required this.railNavbarMenuItemsList,
+    required this.appBar,
   }) : super(key: key);
 
   @override
@@ -29,9 +31,10 @@ class DashboardPageState extends State<DashboardPage> {
         _selectedIndex < railNavbarMenuItemsList.length ? _selectedIndex : 0;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Dashboard'),
-      ),
+      appBar: widget.appBar ??
+          AppBar(
+            title: const Text('Dashboard'),
+          ),
       backgroundColor: Colors.grey,
       body: Row(
         children: [

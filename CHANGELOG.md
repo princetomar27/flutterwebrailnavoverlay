@@ -1,4 +1,4 @@
-## 0.0.1
+## 0.0.3
 
 Initial Release
 This version marks the initial release of the webrailnavoverlay package, a Flutter package designed to simplify the creation of web-based navigation dashboards with an intuitive rail navigation bar and overlay support. Below are the key features and functionalities introduced in this version:
@@ -43,7 +43,7 @@ To start using webrailnavoverlay in your project, simply add it to your pubspec.
 
 yaml
 dependencies:
-webrailnavoverlay: ^0.0.1
+webrailnavoverlay: ^0.0.2
 
 Then, import it into your Dart files:
 
