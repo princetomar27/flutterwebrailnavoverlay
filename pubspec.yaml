@@ -1,7 +1,7 @@
 name: webrailnavoverlay
 description: A Flutter package for a web-based navigation rail with overlay support.
 version: 0.0.1
-homepage: https://github.com/princetomar27/webrailnavoverlay 
+homepage: https://github.com/princetomar27/flutterwebrailnavoverlay
 publish_to: 'https://pub.dev'
 
 environment:
